@@ -63,4 +63,6 @@ dynamic errorInterceptor(DioError dioError) {
 Future getPost() async {
   final response = await _dio.get(_postApi);
   print('response ${response.data}');
+  return response.data;
 }
+
